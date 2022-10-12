@@ -1,0 +1,71 @@
+import numpy as np
+#1
+"""
+x=np.arange(15,55)
+print(x[x>[x[0]]])
+"""
+
+#2
+"""
+c = np.full([3, 4], 10)
+print(c)
+"""
+
+#3
+"""
+arr1 = np.arange(10,19)
+print("Original array, before reshaping:\n")
+print(arr1)
+arr2 = np.reshape(arr1,(3,3))
+print("\nReshaped array:")
+print(arr2)
+"""
+
+#4
+"""
+a = np.arange(1,26).reshape(5,5)
+np.fill_diagonal(a,[1,2,3,4,5])
+print(a)
+"""
+
+#5
+"""
+a=np.asfarray(np.arange(3,9))
+print(a)
+"""
+
+#6
+"""
+a = np.arange(0,12).reshape(3,4)
+print(a)
+print(np.fliplr(a))
+"""
+
+#7
+"""
+c = np.array(['b1bc', 'bca1', 'jha1']);
+print(np.char.capitalize(c))
+print(np.char.lower(c))
+print(np.char.title(c))
+print(np.char.swapcase(c))
+print(np.char.upper(c))
+"""
+
+#8,9
+"""
+yesterday = np.datetime64('today', 'D') - np.timedelta64(1, 'D')
+print("Yestraday: ",yesterday)
+today     = np.datetime64('today', 'D')
+print("Today: ",today)
+tomorrow  = np.datetime64('today', 'D') + np.timedelta64(1, 'D')
+print("Tomorrow: ",tomorrow)
+"""
+
+#10
+"""
+arr = np.array([10, 20, 30])
+arr = np.append(arr, np.arange(40,100,10))
+print(arr)
+"""
+
+
